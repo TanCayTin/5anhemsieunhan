@@ -25,31 +25,35 @@ def main():
             print("Error, do it again!")
         
     if n == 2:
+        print ("This task takes a number then return them")
         a = int(input("Enter a random number: "))
         print (a)
-        print ("This task takes a number then return them")
     elif n == 4:
+        print("This task receives two numbers then gives the sum of them")
         n1 = int(input("Enter the first number: "))
         n2 = int(input("Enter the second number: "))
         sum = n1 + n2
         print(" Sum of these numbers: ", sum)
-        print("This task receives two numbers then gives the sum of them")
+        
     elif n == 6:
+        print("Two numbers are the input of this task while their product is the aim of this task")
         nu1 = int(input("Choose a number: "))
         nu2 = int(input("Choose an another number (can be the same with the last one): "))
         product = nu1*nu2
         print("The product of the these numbers is: ", product)
-        print("Two numbers are the input of this task while their product is the aim of this task")
+        
     elif n ==8:
+        print("By getting two numbers from input, this task can give us the remainder of them")
         bro1 = int(input("Can you give me a number?: "))
         bro2 = int(input("OK thanks. But please give me one more number xD, but please don's type 0 :) : "))
         remainder = bro1 % bro2
         print("Ok so we got remainder of these number. It is: ", remainder)
-        print("By getting two numbers from input, this task can give us the remainder of them")
+        
     else:
+        print("This task provide prime numbers from 1 to 100")
         print("OK so we are going to print all prime number less than 100\n")
         for i in range (2, 100):
             if PrimeNumber(i):
                 print(i)
-        print("This task provide prime numbers from 1 to 100")
+        
 main()
